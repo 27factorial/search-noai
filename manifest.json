@@ -10,6 +10,11 @@
     "webRequest",
     "webRequestBlocking"
   ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "search-noai@factorial"
+    }
+  },
   "background": {
     "scripts": ["noai.js"]
   }
