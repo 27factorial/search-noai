@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Search NoAI",
-  "version": "1.0",
+  "version": "1.1",
   "description": "An extension for disabling the AI Overview on all Google searches by appending -noai to the search.",
   "permissions": [
     "*://*.google.com/*",
@@ -12,7 +12,10 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "search-noai@factorial"
+      "id": "search-noai@factorial",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   },
   "background": {

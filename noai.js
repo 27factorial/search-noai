@@ -32,7 +32,7 @@ function hook(details) {
         // instead of the original search, set the search parameters to be the original search + the
         // -noai flag. The trimEnd() just removes extra spaces at the end of the original search.
         let search = params.get(QUERY_PARAM);
-        params.set(QUERY_PARAM, search.trimEnd() + NOAI_FLAG)
+        params.set(QUERY_PARAM, search.trimEnd() + " " + NOAI_FLAG)
 
 
         // construct the new URL with the flag included
