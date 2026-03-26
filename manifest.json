@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Search NoAI",
+  "version": "1.0",
+  "description": "An extension for disabling the AI Overview on all Google searches by appending -noai to the search.",
+  "permissions": [
+    "*://*.google.com/*",
+    "*://google.com/*",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "background": {
+    "scripts": ["noai.js"]
+  }
+}
